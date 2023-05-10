@@ -2,6 +2,7 @@ package com.example.agendinha3;
 
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -24,7 +25,27 @@ public class Conexao_DB extends SQLiteOpenHelper {
         @Override
         public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
+//                public String autenticaUsuario(Usuario usuario){
+//
+//                        SQLiteDatabase db = getReadableDatabase();
+//                        String sqli_busca_usuarios = "select * from Agenda Where Email = " + "'"
+//                                + Agenda_OBJ.getEmail() + "'";
+//
+//                        Cursor cursor = db.rawQuery(sqli_busca_usuarios, null);
+//                        while(cursor.moveToNext()){
+//                                if(Agenda_OBJ.getEmail().equals(cursor.getString(cursor.getColumnIndex("Email")))) {
+//                                        if(Agenda_OBJ.getNome().equals(cursor.getString(cursor.getColumnIndex("Nome")))){
+//                                                return "usuário existente"
+//                                }
+//                                }
+//                        }
+//
+//                        return "Senha ou email inseridos indevidamente";
+//                }
+
         }
+
+
 
 
 }
